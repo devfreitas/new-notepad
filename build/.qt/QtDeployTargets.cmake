@@ -1,7 +1,0 @@
-set(__QT_DEPLOY_TARGETS "omawrite_core;omawrite;omawrite_tests")
-set(__QT_DEPLOY_TARGET_omawrite_core_FILE /home/rafael/Work/new-notepad/build/libomawrite_core.a)
-set(__QT_DEPLOY_TARGET_omawrite_core_TYPE STATIC_LIBRARY)
-set(__QT_DEPLOY_TARGET_omawrite_FILE /home/rafael/Work/new-notepad/build/omawrite)
-set(__QT_DEPLOY_TARGET_omawrite_TYPE EXECUTABLE)
-set(__QT_DEPLOY_TARGET_omawrite_tests_FILE /home/rafael/Work/new-notepad/build/omawrite_tests)
-set(__QT_DEPLOY_TARGET_omawrite_tests_TYPE EXECUTABLE)
