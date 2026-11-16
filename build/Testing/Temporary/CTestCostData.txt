@@ -1,3 +1,0 @@
-omawrite_tests 1 0
----
-omawrite_tests
