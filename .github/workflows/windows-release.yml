@@ -22,7 +22,7 @@ jobs:
         uses: ilammy/msvc-dev-cmd@v1
 
       - name: Install Qt 6
-        uses: jurplel/setup-qt@v4
+        uses: jurplel/install-qt-action@v4
         with:
           version: "6.8.3"
           host: windows
