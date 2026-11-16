@@ -1,0 +1,187 @@
+Start testing: Nov 16 00:24 -03
+----------------------------------------------------------
+1/1 Testing: omawrite_tests
+1/1 Test: omawrite_tests
+Command: "/home/rafael/Work/new-notepad/build/omawrite_tests"
+Directory: /home/rafael/Work/new-notepad/build
+"omawrite_tests" start time: Nov 16 00:24 -03
+Output:
+----------------------------------------------------------
+********* Start testing of OmawriteTest *********
+Config: Using QtTest library 6.12.0, Qt 6.12.0 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 16.2.1 20260810), omarchy 4.5.0
+PASS   : OmawriteTest::initTestCase()
+PASS   : OmawriteTest::countsWords()
+PASS   : OmawriteTest::searchIgnoresDiacriticsTheQueryLeavesOut()
+PASS   : OmawriteTest::restylesTheWholeDocumentWithItsLayoutFinished()
+PASS   : OmawriteTest::normalizesLinks()
+PASS   : OmawriteTest::suggestsSafeNames()
+Usage: omawrite [FILE]
+
+Opens FILE, a Markdown file, or an empty document without one. Omawrite
+is a graphical app and keeps running until its window is closed.
+
+Options:
+  -h, --help  Show this message and exit
+Usage: omawrite [FILE]
+
+Opens FILE, a Markdown file, or an empty document without one. Omawrite
+is a graphical app and keeps running until its window is closed.
+
+Options:
+  -h, --help  Show this message and exit
+PASS   : OmawriteTest::answersHelpBeforeOpeningAWindow()
+PASS   : OmawriteTest::printsInPointsNotPixels()
+PASS   : OmawriteTest::keepsNotoFromCrowdingTheFontList()
+PASS   : OmawriteTest::remembersEditorFont()
+PASS   : OmawriteTest::findsStrikethroughOutsideCode()
+PASS   : OmawriteTest::undoesAnEditInOneStep()
+PASS   : OmawriteTest::keepsLineHeightAcrossUndoAndPaste()
+PASS   : OmawriteTest::opensFilesWithLineHeightAndNoUndo()
+PASS   : OmawriteTest::searchFollowsEditsWithoutTakingTheCaret()
+PASS   : OmawriteTest::replacesOneMatchAfterAnother()
+PASS   : OmawriteTest::countsWordsAfterEditsWithoutBlocking()
+PASS   : OmawriteTest::searchWaitsForTypingToPause()
+PASS   : OmawriteTest::reopeningTheFindBarSearchesForWhatItHolds()
+PASS   : OmawriteTest::reachesAndLeavesTheReplaceFieldFromTheKeyboard()
+PASS   : OmawriteTest::keepsShortcutsBehindDialogs()
+PASS   : OmawriteTest::togglesTheFontPickerFromItsButton()
+PASS   : OmawriteTest::breaksLinesAfterInlineBackticks()
+PASS   : OmawriteTest::togglesEmphasisAtTheCaret()
+PASS   : OmawriteTest::togglesEmphasisMarkers()
+PASS   : OmawriteTest::findsInlineMarkdownRanges()
+PASS   : OmawriteTest::findsLinkUrlAtPosition()
+PASS   : OmawriteTest::showsLinkUrlOnlyOverTheLinkText()
+PASS   : OmawriteTest::showsLinkTooltipUrlAsPlainText()
+PASS   : OmawriteTest::leavesInlineCodeLiteral()
+PASS   : OmawriteTest::keepsIntrawordUnderscoresLiteral()
+PASS   : OmawriteTest::respectsEscapedOpeningBackticks()
+PASS   : OmawriteTest::keepsEnclosedCodeStyling(italic)
+PASS   : OmawriteTest::keepsEnclosedCodeStyling(bold)
+PASS   : OmawriteTest::keepsEnclosedCodeStyling(link)
+PASS   : OmawriteTest::leavesFencedCodeLiteral()
+PASS   : OmawriteTest::opensFencesOnlyWhereMarkdownDoes()
+PASS   : OmawriteTest::hidesNoMarkersInsideCode()
+FAIL!  : OmawriteTest::showsMarkersAroundTheCaret() Compared values are not the same
+   Actual   (formats.at(i).foreground().color()): #ffa0a0a0
+   Expected (QColor(QStringLiteral("#4f525a"))) : #ff4f525a
+   Loc: [/home/rafael/Work/new-notepad/tests/omawrite_tests.cpp(1483)]
+FAIL!  : OmawriteTest::takesTheCodePanelFromTheTheme() Compared values are not the same
+   Actual   (codePanelFor("mode = \"dark\"\n" "background = \"#111c18\"\n" "foreground = \"#c1c497\"\n" "lighter_background = \"#23372b\"\n")): #ff444444
+   Expected (QColor(QStringLiteral("#23372b")))                                                                                               : #ff23372b
+   Loc: [/home/rafael/Work/new-notepad/tests/omawrite_tests.cpp(1535)]
+PASS   : OmawriteTest::rendersBoldItalicRuns()
+PASS   : OmawriteTest::hidesMarkersInsideNestedMarkup()
+PASS   : OmawriteTest::honoursBackslashEscapes()
+PASS   : OmawriteTest::leavesThematicBreaksAlone()
+PASS   : OmawriteTest::mergesInlineStylesWithTheBlock()
+PASS   : OmawriteTest::recognisesTildeFences()
+PASS   : OmawriteTest::readsLinkDestinationsWithParentheses()
+PASS   : OmawriteTest::reportsThemeChangesOnlyWhenTheyHappen()
+PASS   : OmawriteTest::ignoresInlineMarkdownInsideCodeSpans()
+PASS   : OmawriteTest::keepsMarkupThatEnclosesACodeSpan()
+PASS   : OmawriteTest::stylesAnEnclosedCodeSpanAsCode()
+PASS   : OmawriteTest::keepsWhitespaceDelimitedAsterisksLiteral()
+PASS   : OmawriteTest::labelsTheAccentInWhicheverReads()
+FAIL!  : OmawriteTest::loadsCurrentOmarchyTheme() Compared values are not the same
+   Actual   (backend.themeBackground()): "#383838"
+   Expected (QStringLiteral("#fefefe")): "#fefefe"
+   Loc: [/home/rafael/Work/new-notepad/tests/omawrite_tests.cpp(1809)]
+FAIL!  : OmawriteTest::fallsBackForSelectionColors(bright_foreground) Compared values are not the same
+   Actual   (backend.themeSelection()): "#626262"
+   Expected (selection)               : "#333333"
+   Loc: [/home/rafael/Work/new-notepad/tests/omawrite_tests.cpp(1877)]
+FAIL!  : OmawriteTest::fallsBackForSelectionColors(foreground) Compared values are not the same
+   Actual   (backend.themeSelection()): "#626262"
+   Expected (selection)               : "#333333"
+   Loc: [/home/rafael/Work/new-notepad/tests/omawrite_tests.cpp(1877)]
+FAIL!  : OmawriteTest::fallsBackForSelectionColors(selection_background) Compared values are not the same
+   Actual   (backend.themeSelection()): "#626262"
+   Expected (selection)               : "#222222"
+   Loc: [/home/rafael/Work/new-notepad/tests/omawrite_tests.cpp(1877)]
+PASS   : OmawriteTest::readsTomlValuesPastInlineComments()
+FAIL!  : OmawriteTest::keepsDefaultsForColorsItCannotParse() Compared values are not the same
+   Actual   (backend.themeBackground()): "#383838"
+   Expected (QStringLiteral("#1a1b17")): "#1a1b17"
+   Loc: [/home/rafael/Work/new-notepad/tests/omawrite_tests.cpp(1906)]
+FAIL!  : OmawriteTest::takesItsDefaultsFromTheModeTheThemeAsksFor() '!backend.darkMode()' returned FALSE. ()
+   Loc: [/home/rafael/Work/new-notepad/tests/omawrite_tests.cpp(1921)]
+PASS   : OmawriteTest::ignoresFileWatcherEventsForSavedContents()
+PASS   : OmawriteTest::keepsCursorAndSelectionStableAcrossInsertions()
+PASS   : OmawriteTest::stepsOverWholeCharactersWhenTypingAndSaving()
+PASS   : OmawriteTest::stepsCursorByWholeGraphemeClusters()
+PASS   : OmawriteTest::savesAndOpensFromFooterButtons()
+PASS   : OmawriteTest::copiesRenderedHtml()
+PASS   : OmawriteTest::flashesScrollBarOnlyWhenPaging()
+PASS   : OmawriteTest::breaksLinesOnReturn()
+PASS   : OmawriteTest::nestsListItemsOnTab()
+PASS   : OmawriteTest::closesParagraphBreaksOnBackspace()
+PASS   : OmawriteTest::translatorFallsBackToEnglish()
+PASS   : OmawriteTest::translatorFollowsTheLanguageFile()
+PASS   : OmawriteTest::translatorPicksPluralForms()
+PASS   : OmawriteTest::translatorTakesEnglishPluralRulesForAnEnglishFallback()
+PASS   : OmawriteTest::translatorFollowsALanguageSwitch()
+PASS   : OmawriteTest::englishCatalogMatchesTheSources()
+PASS   : OmawriteTest::catalogsMatchTheEnglishOne()
+PASS   : OmawriteTest::catalogChecksCatchBrokenTranslations()
+PASS   : OmawriteTest::everyCatalogIsCompiledIn()
+PASS   : OmawriteTest::dialogButtonsTakeTheirAccessKeysFromTheTranslation()
+PASS   : OmawriteTest::unsavedChangesDialogPicksWithABareLetterOrAlt()
+PASS   : OmawriteTest::unsavedChangesDialogTakesTheLetterFromTheEditor()
+PASS   : OmawriteTest::scalesTextWithDesktopTextSize()
+PASS   : OmawriteTest::stepsTextSizeOnTopOfTheDesktopScale()
+PASS   : OmawriteTest::banksTouchpadScrollBeforeChangingTextSize()
+PASS   : OmawriteTest::growsTextFromEitherPlusKey()
+PASS   : OmawriteTest::keepsTextColumnInsideNarrowWindows()
+PASS   : OmawriteTest::shortcutsDialogHasNoBindingLoop()
+QWARN  : OmawriteTest::shortcutReferenceFitsTheWindow(standard) This plugin does not support propagateSizeHints()
+PASS   : OmawriteTest::shortcutReferenceFitsTheWindow(standard)
+QWARN  : OmawriteTest::shortcutReferenceFitsTheWindow(narrow) This plugin does not support propagateSizeHints()
+PASS   : OmawriteTest::shortcutReferenceFitsTheWindow(narrow)
+QWARN  : OmawriteTest::shortcutReferenceFitsTheWindow(small-text) This plugin does not support propagateSizeHints()
+PASS   : OmawriteTest::shortcutReferenceFitsTheWindow(small-text)
+QWARN  : OmawriteTest::shortcutReferenceFitsTheWindow(large-text) This plugin does not support propagateSizeHints()
+PASS   : OmawriteTest::shortcutReferenceFitsTheWindow(large-text)
+QWARN  : OmawriteTest::shortcutReferenceFitsTheWindow(narrow-large-text) This plugin does not support propagateSizeHints()
+PASS   : OmawriteTest::shortcutReferenceFitsTheWindow(narrow-large-text)
+PASS   : OmawriteTest::remembersLastSaveDirectory()
+PASS   : OmawriteTest::savesTheCharactersItOpened()
+PASS   : OmawriteTest::autoSavesTitledDocumentsAfterEdits()
+PASS   : OmawriteTest::doesNotAutoSaveUntitledDocuments()
+PASS   : OmawriteTest::holdsAutoSaveWhenTheFileChangesElsewhere()
+PASS   : OmawriteTest::checksTheFileBeforeEachAutoSave()
+PASS   : OmawriteTest::resumesAutoSaveOnlyAfterAnExplicitSave()
+PASS   : OmawriteTest::resumesAutoSaveAfterReloading()
+PASS   : OmawriteTest::keepsOtherEncodingsAndLineEndingsOutOfAutoSave()
+PASS   : OmawriteTest::holdsAutoSaveWhileTheWriterDecides()
+PASS   : OmawriteTest::startsANamedFileThatIsNotThereYet()
+PASS   : OmawriteTest::refusesANewFileInAMissingFolder()
+PASS   : OmawriteTest::namesARelativeFileByItsFullPath()
+PASS   : OmawriteTest::saysWhenARecoveredDraftKeepsAFileFromOpening()
+PASS   : OmawriteTest::dropsAPendingCloseWhenItsSaveFails()
+PASS   : OmawriteTest::savesInAFolderItCannotWriteNewFilesIn()
+PASS   : OmawriteTest::removesARecoveryDraftItCannotRead()
+PASS   : OmawriteTest::keepsWatchingAFileReplacedFromOutside()
+PASS   : OmawriteTest::keepsTheWritersTextWhenTheChangeDialogIsDismissed()
+PASS   : OmawriteTest::externalChangeDialogIgnoresABareLetter()
+PASS   : OmawriteTest::opensAnExistingFileFromTheCommandLine()
+PASS   : OmawriteTest::keepsDiscardedChangesOutOfTheFile()
+PASS   : OmawriteTest::forgetsTheSavedTextWhenTheFileChangedUnseen()
+PASS   : OmawriteTest::doesNotAutoSaveARecoveredDraftOverItsFile()
+PASS   : OmawriteTest::revertsEmptyDocumentToCleanState()
+PASS   : OmawriteTest::revertsSavedDocumentToCleanState()
+PASS   : OmawriteTest::keepsADocumentUnsavedAfterItsFileDisappears()
+PASS   : OmawriteTest::treatsAFileRemovedAndWrittenAgainAsChanged()
+PASS   : OmawriteTest::noticesARemovedFileComingBack()
+PASS   : OmawriteTest::hidesReloadWhileTheFileIsRemoved()
+PASS   : OmawriteTest::cleanupTestCase()
+Totals: 116 passed, 8 failed, 0 skipped, 0 blacklisted, 36439ms
+********* Finished testing of OmawriteTest *********
+<end of output>
+Test time =  36.53 sec
+----------------------------------------------------------
+Test Failed.
+"omawrite_tests" end time: Nov 16 00:24 -03
+"omawrite_tests" time elapsed: 00:00:36
+----------------------------------------------------------
+
+End testing: Nov 16 00:24 -03

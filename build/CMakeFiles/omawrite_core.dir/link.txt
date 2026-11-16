@@ -1,0 +1,2 @@
+/usr/bin/ar qc libomawrite_core.a CMakeFiles/omawrite_core.dir/omawrite_core_autogen/mocs_compilation.cpp.o CMakeFiles/omawrite_core.dir/src/backend.cpp.o CMakeFiles/omawrite_core.dir/src/cli.cpp.o CMakeFiles/omawrite_core.dir/src/markdownhighlighter.cpp.o CMakeFiles/omawrite_core.dir/src/systemtheme.cpp.o CMakeFiles/omawrite_core.dir/src/translator.cpp.o
+/usr/bin/ranlib libomawrite_core.a
